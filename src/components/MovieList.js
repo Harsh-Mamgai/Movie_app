@@ -5,7 +5,7 @@ export default function MovieList(props) {
 
   return (
     <>
-        {props.movies ? props.movies.map((movie, index)=>{
+        { props.movies ? props.movies.map((movie, index)=>{
             return <div className="image-container d-flex justify-content-start m-3 height">
                 <img src={movie.Poster} key={index} alt=""/>
 
@@ -14,7 +14,7 @@ export default function MovieList(props) {
                 </div>
 
             </div>
-        }) : <h1>movie not present</h1>}
+        }) : <h1></h1> }
     </>
   )
 }
